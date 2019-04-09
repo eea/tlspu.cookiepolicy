@@ -29,7 +29,7 @@ CookiePolicy.deleteCookies = function delete_cookies(domain) {
 };
 
 jQuery(function() {
-    var btn = document.getElementById("tlspu_cookiepolicy_button");
+    var btn = document.getElementById("tlspu_submit_button");
     if (!btn) {
         return;
     }

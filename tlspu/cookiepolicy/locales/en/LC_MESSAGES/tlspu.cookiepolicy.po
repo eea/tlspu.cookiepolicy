@@ -28,7 +28,7 @@ msgid "Cookie Policy"
 msgstr ""
 
 #: ./controlpanel/cookiepolicy.py:78
-msgid "Cookie Policy settings"
+msgid "Global Statusmessage overlay settings"
 msgstr ""
 
 #: ./controlpanel/cookiepolicy.py:26

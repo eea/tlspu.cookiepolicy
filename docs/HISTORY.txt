@@ -3,6 +3,8 @@ Changelog
 
 1.1.7.eea.dev0 - (unreleased)
 -----------------------------
+* Feature: re-purposed this add-on as a global status message overlay.
+  [alecghica refs #103621]
 
 1.1.6 - (2015-06-03)
 --------------------

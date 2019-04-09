@@ -23,6 +23,7 @@ class CookiePolicyViewlet(ViewletBase):
             self.message = self.sheet.getProperty(
                 "TCP_message",
                 "This site uses cookies but the owner has not explained why!")
+            self.submit_button = self.sheet.getProperty("TCP_submit_button", "OK")
 
     def update(self):
         return

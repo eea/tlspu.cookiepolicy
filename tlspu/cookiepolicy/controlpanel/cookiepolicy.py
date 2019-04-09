@@ -20,10 +20,10 @@ from tlspu.cookiepolicy import TCPMessageFactory as _
 
 
 class ICookiePolicySchema(Interface):
-    """ Cookie Policy configuration """
+    """ Global statusmessage overlay configuration """
 
     TCP_enabled = Bool(
-        title=_(u"Enable Cookie Policy"),
+        title=_(u"Enable Global statusmessage overlay"),
         default=True,
         required=False,
     )
@@ -32,7 +32,7 @@ class ICookiePolicySchema(Interface):
         title=_(u'Title'),
         default=_(u'This Site Uses Cookies'),
         description=_(u'help_tcp_title',
-            default=u"Enter the title for the CookiePolicy panel",
+            default=u"Enter the title for the Global statusmessage overlay",
         ),
         required=True,
     )
@@ -41,8 +41,17 @@ class ICookiePolicySchema(Interface):
         title=_(u'Message'),
         description=_(
             u'help_tcp_message',
-            default=(u"Enter the message for the CookiePolicy panel. This may "
+            default=(u"Enter the message for the Global statusmessage overlay. This may "
                      u"contain HTML"),
+        ),
+        required=True,
+    )
+
+    TCP_submit_button = TextLine(
+        title=_(u'Submit button'),
+        default=_(u'OK'),
+        description=_(u'help_tcp_submit_button',
+            default=u"Enter the title for the Global statusmessage overlay submit button.",
         ),
         required=True,
     )
@@ -65,16 +74,17 @@ class CookiePolicyControlPanelAdapter(BaseControlPanelAdapter):
     TCP_enabled = ProxyFieldProperty(ICookiePolicySchema['TCP_enabled'])
     TCP_title = ProxyFieldProperty(ICookiePolicySchema['TCP_title'])
     TCP_message = ProxyFieldProperty(ICookiePolicySchema['TCP_message'])
+    TCP_submit_button = ProxyFieldProperty(ICookiePolicySchema['TCP_submit_button'])
 
 baseset = FormFieldsets(ICookiePolicySchema)
 baseset.id = 'cookiepolicy'
-baseset.label = _(u'Cookie Policy')
+baseset.label = _(u'Global statusmessage overlay')
 
 
 class CookiePolicyControlPanel(ControlPanelForm):
     """ """
     form_fields = FormFieldsets(baseset)
 
-    label = _('Cookie Policy settings')
-    description = _('Configure settings for Cookie Policy.')
-    form_name = _('Cookie Policy')
+    label = _('Global statusmessage overlay settings')
+    description = _('Configure settings for Global Statusmessage overlay.')
+    form_name = _('Global statusmessage overlay')

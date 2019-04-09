@@ -15,9 +15,9 @@
 
     <genericsetup:registerProfile
         name="default"
-        title="TLSPU Cookie Policy"
+        title="Global Statusmessage - overlay"
         directory="profiles/default"
-        description="A simple, yet useful, cookie policy announcement"
+        description="A simple, yet useful, global statusmessage overlay announcement"
         provides="Products.GenericSetup.interfaces.EXTENSION"
     />
 

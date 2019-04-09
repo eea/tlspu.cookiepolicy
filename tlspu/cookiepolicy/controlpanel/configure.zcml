@@ -5,7 +5,7 @@
   <adapter factory=".cookiepolicy.CookiePolicyControlPanelAdapter" />
 
   <browser:page
-    name="cookiepolicy"
+    name="global_statusmessage_overlay_config"
     for="Products.CMFPlone.interfaces.IPloneSiteRoot"
     class=".cookiepolicy.CookiePolicyControlPanel"
     permission="cmf.ManagePortal"
