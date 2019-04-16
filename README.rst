@@ -1,6 +1,6 @@
-===============================================
-re-purposed this add-on as a global status message overlay
-===============================================
+=============================
+Global status message overlay
+=============================
 
 .. contents:: Table of Contents
    :depth: 2
@@ -9,7 +9,7 @@ re-purposed this add-on as a global status message overlay
 Overview
 --------
 
-This add-on was re-purposed as a global status message overlay.
+This add-on was **re-purposed** as a global status message overlay.
 The original name was "TLSPU Cookie Policy (tlspu.cookiepolicy)".
 
 **TLSPU Cookie Policy** is a Plone package (add-on) providing simple a simple
