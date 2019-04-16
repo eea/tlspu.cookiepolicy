@@ -1,5 +1,5 @@
 ===============================================
-TLSPU Cookie Policy (tlspu.cookiepolicy)
+re-purposed this add-on as a global status message overlay
 ===============================================
 
 .. contents:: Table of Contents
@@ -8,6 +8,9 @@ TLSPU Cookie Policy (tlspu.cookiepolicy)
 
 Overview
 --------
+
+This add-on was re-purposed as a global status message overlay.
+The original name was "TLSPU Cookie Policy (tlspu.cookiepolicy)".
 
 **TLSPU Cookie Policy** is a Plone package (add-on) providing simple a simple
 solution to comply with the so called "European Cookie Law".
